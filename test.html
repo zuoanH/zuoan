@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [{id:1,name:'张三'},{id:2,name:'李四'},{id:3,name:'王五'},{id:4,name:'jack'},{id:5,name:'rock'},{id:6,name:'哈哈'}]
+        var arr1 = [{id:1,name:'张三2'},{id:2,name:'李四2'},{id:3,name:'王五2'},{id:9,name:'哈哈2'}]
+        var arr3 = []
+        arr.map((val, index) => {
+            arr1.map((val2, index2) => {
+                if(val.id === val2.id){
+                    arr3.push(val)
+                }
+            })
+        })
+        console.log(arr3)
+    </script>
+</body>
+</html>
