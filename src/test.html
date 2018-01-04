@@ -18,7 +18,13 @@
                 }
             })
         }) 
-
+        arr.map((val, index) => {
+            arr1.map((val2, index2) => {
+                if(val.id === val2.id){
+                    arr3.push(val)
+                }
+            })
+        }) 
         arr.map((val, index) => {
             arr1.map((val2, index2) => {
                 if(val.id === val2.id){
